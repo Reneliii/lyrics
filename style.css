@@ -1,0 +1,47 @@
+<style>
+	body{
+		background #ccc;
+		text-align: center;
+		font-family: 'Courier New';
+		font-variant: small-caps;
+		text-transform: lowercase;
+	}
+	.mytabs {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 800px;
+		margin: 50px auto;
+		padding: 25px;
+	}
+
+	.mytabs input[type = 'radio']{
+		display: none;
+	}
+
+	.mytabs label {
+		padding: 25px;
+		background: #E0D8FB;
+		font-family: 'Courier New';
+		font-variant: small-caps;
+		text-transform: lowercase;
+	}
+	.img{
+		width: 300px;
+	}
+	.mytabs .tab {
+			width: 100%;
+			padding: 20px;
+			font-family: 'Courier New';
+			font-variant: small-caps;
+			text-transform: lowercase;
+			order: 1;
+			display: none;
+	}
+
+	.mytabs input[type = 'radio']:checked + label + .tab {
+
+		display: block;
+	}
+
+
+</style>
